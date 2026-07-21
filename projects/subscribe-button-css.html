@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM - Subscribe Button</title>
+    <style>
+      p {
+        color: rgb(19, 6, 133);
+        background: #fab0b0;
+        text-align: center;
+      }
+      .subscribe-button {
+        border: none;
+        margin-left: 43%;
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        
+      }
+      .is-subscribed {
+        background-color: #da0000;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p><b>Youtube Subscribe Button</b></p>
+
+    <button class="js-subscribe-button subscribe-button" onclick="subscribe();">Subscribe</button>
+
+    <script>
+      //make algorithm first
+      function subscribe(){
+
+      const buttonElement = document.querySelector('.js-subscribe-button');
+
+     if (buttonElement.innerText === 'Subscribe'){
+      buttonElement.innerHTML = 'Subscribed';
+      buttonElement.classList.add('is-subscribed');
+     }else{
+      buttonElement.innerHTML = 'Subscribe';
+      buttonElement.classList.remove('is-subscribed');
+     }
+      }
+    </script>
+  </body>
+</html>
