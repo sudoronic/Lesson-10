@@ -1,77 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Rock Paper Scissors</title>
-    <style>
-      body {
-        background-color: rgb(25,25 ,25);
-        color: white;
-        font-family: arial;
-      }
-      .heading-game {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-      }
-      .move-icon {
-        height: 50px;
-      }
-      .move-button {
-        background-color: transparent;
-        border: 2px solid white;
-        width: 120px;
-        height: 120px;
-        border-radius: 60px;
-        margin: 15px;
-        cursor: pointer;
-      }
-      .result {
-        font-size: 25px;
-        font-weight: bold;
-        margin: 50px;
-      }
-      .score {
-        margin-top: 60px;
-      }
-      .reset-score-button {
-        background-color: white;
-        border: none;
-        font-size: 20px;
-        padding: 8px 15px;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <p class="heading-game">Rock Paper Scissors</p>
-    <button onclick="
-      playGame('rock');
-    " class="move-button">
-    <img class="move-icon" src="images/rock-emoji.png" alt="">
-  </button>
-
-    <button onclick="
-      playGame('paper');
-    " class="move-button"><img class="move-icon" src="images/paper-emoji.png" alt=""></button>
-
-    <button onclick="
-      playGame('scissors');
-    " class="move-button"><img class="move-icon" src="images/scissors-emoji.png" alt=""></button>
-
-    <p class="js-moves result"></p>
-    <p class="js-score score">Wins: , Losses: , Ties:</p>
-
-
-    <button onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score');
-      updatescoredesk();
-    " class="reset-score-button">Reset Score</button>
-
-    <script>
-      let score = JSON.parse(localStorage.getItem('score')) || {
+  let score = JSON.parse(localStorage.getItem('score')) || {
         wins: 0,
         losses: 0,
         ties: 0
@@ -159,6 +86,3 @@
 
         return computerMove;
       }
-    </script>
-  </body>
-</html>
