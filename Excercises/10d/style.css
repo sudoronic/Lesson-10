@@ -1,0 +1,27 @@
+.is-toggle {
+  color: rgb(240, 231, 231);
+  background-color: rgb(18, 66, 66);
+  position: relative;
+  left: 90%;
+  border: none;
+  border-radius: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.toggleButton {
+    color: rgb(80, 51, 51);
+  background-color: rgb(243, 238, 238);
+  position: relative;
+  left: 90%;
+  border: none;
+  border-radius: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.torch-img{
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  
+}
