@@ -1,0 +1,27 @@
+.head-para {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.req-button {
+  color: white;
+  background-color: #181212;
+  padding: 10px 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 6px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+.later-button {
+    color: black;
+  background-color: rgb(230,230,230);
+  padding: 10px 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 6px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}

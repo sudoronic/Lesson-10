@@ -1,0 +1,15 @@
+.css-para {
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+}
+.css-button {
+  color: black;
+  background-color: rgb(255,216,20);
+  border: none;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 13px;
+  padding: 5px 30px;
+  cursor: pointer;
+}
