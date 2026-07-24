@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculation</title>
+  <style>
+    .cost-input {
+      font-size: 15px;
+      padding: 10px;
+
+    }
+    .calculate-css {
+      color: white;
+      background-color: green;
+      border: none;
+      padding: 13px 15px;
+      cursor: pointer;
+    }
+    .css-para {
+      color: green;
+    }
+    .top-heading {
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <p class="top-heading"><b>Amazon Shipping Calculator</b></p>
+
+  <input class="js-cost-input cost-input" placeholder="Cost of Order" onkeydown="enterKey(event);"> 
+  
+  <button class="calculate-css" onclick="calculateTotal();">Calculate</button>
+
+  <p class="js-display css-para">Total :</p>
+
+  <script>
+    //algorithm
+    //whenever we get a value from DOM its always a string so convert it using the Number Function
+    
+  function enterKey(event){
+    console.log(event.key);
+    if(event.key === 'Enter'){
+      calculateTotal();
+    }
+  } 
+    
+  function calculateTotal()
+  {
+   const inputElem = document.querySelector('.js-cost-input');
+
+   let cost = Number( inputElem.value);
+
+   if (cost < 40){
+    cost = cost + 10;
+
+    document.querySelector('.js-display').innerHTML = `Total : $${cost} `
+
+   }else{
+    cost = cost + 0;
+    
+    document.querySelector('.js-display').innerHTML = `Total : $${cost} `
+    }
+
+
+
+
+
+    /*
+    Learned the followings ; 
+- event object and its property like key 
+- after geting the vale from DOM its a string and we need to convert it into a numeric value to perform calculation using Number function of javascript 
+- learned the type coersion (automatic type conversion of variable or value)          
+-another built-in function called window in which all browsers elements are included
+such as ,
+windows,document
+windows.console.log()
+windows.alert();    
+    */
+  }
+  </script>
+</body>
+</html>
